@@ -1,0 +1,101 @@
+<testsuite failures="3" name="src/test/java/KarateSampleFeatures/APITestingWithTestDataParameterised.feature" skipped="0" tests="3" time="0.259478">
+  <testcase classname="src.test.java.KarateSampleFeatures.APITestingWithTestDataParameterised" name="Positive and negative validations" time="0.032023">
+    <failure message="APITestingWithTestDataParameterised.feature:7 - evaluation (js) failed: baseURL, javax.script.ScriptException: ReferenceError: &quot;baseURL&quot; is not defined in &lt;eval&gt; at line number 1&#10;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)">* def loginPath = '/api/login' ............................................ passed
+Given url baseURL ......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: APITestingWithTestDataParameterised.feature:7 - evaluation (js) failed: baseURL, javax.script.ScriptException: ReferenceError: "baseURL" is not defined in &lt;eval&gt; at line number 1
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.Given url baseURL (APITestingWithTestDataParameterised.feature:7)&#13;
+
+And path apiPath .......................................................... skipped
+When method get ........................................................... skipped
+Then status 200 ........................................................... skipped
+* print "Response: ", response ............................................ skipped
+Then match response.data.id == 2 .......................................... skipped
+Then match response.data.email == 'janet.weaver@reqres.in' ................ skipped
+And match response.data != null ........................................... skipped</failure>
+  </testcase>
+  <testcase classname="src.test.java.KarateSampleFeatures.APITestingWithTestDataParameterised" name="Testing Login Scenario 'Positive'" time="0.209385">
+    <failure message="APITestingWithTestDataParameterised.feature:34 - evaluation (js) failed: baseURL, javax.script.ScriptException: ReferenceError: &quot;baseURL&quot; is not defined in &lt;eval&gt; at line number 1&#10;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)">* def loginPath = '/api/login' ............................................ passed
+Given url baseURL ......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: APITestingWithTestDataParameterised.feature:7 - evaluation (js) failed: baseURL, javax.script.ScriptException: ReferenceError: "baseURL" is not defined in &lt;eval&gt; at line number 1
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.Given url baseURL (APITestingWithTestDataParameterised.feature:7)&#13;
+
+And path apiPath .......................................................... skipped
+When method get ........................................................... skipped
+Then status 200 ........................................................... skipped
+* print "Response: ", response ............................................ skipped
+Then match response.data.id == 2 .......................................... skipped
+Then match response.data.email == 'janet.weaver@reqres.in' ................ skipped
+And match response.data != null ........................................... skipped
+* def loginPath = '/api/login' ............................................ passed
+* def payload1 = .......................................................... passed
+* def payload2 = .......................................................... passed
+* def reqPayload = ('Positive' == 'Positive') ? payload1 : payload2 ....... passed
+Given url baseURL ......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: APITestingWithTestDataParameterised.feature:34 - evaluation (js) failed: baseURL, javax.script.ScriptException: ReferenceError: "baseURL" is not defined in &lt;eval&gt; at line number 1
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.Given url baseURL (APITestingWithTestDataParameterised.feature:34)&#13;
+
+And path loginPath ........................................................ skipped
+And request reqPayload .................................................... skipped
+When method post .......................................................... skipped
+Then status 200 ........................................................... skipped
+* print response .......................................................... skipped</failure>
+  </testcase>
+  <testcase classname="src.test.java.KarateSampleFeatures.APITestingWithTestDataParameterised" name="Testing Login Scenario 'Negative'" time="0.01807">
+    <failure message="APITestingWithTestDataParameterised.feature:34 - evaluation (js) failed: baseURL, javax.script.ScriptException: ReferenceError: &quot;baseURL&quot; is not defined in &lt;eval&gt; at line number 1&#10;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)">* def loginPath = '/api/login' ............................................ passed
+Given url baseURL ......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: APITestingWithTestDataParameterised.feature:7 - evaluation (js) failed: baseURL, javax.script.ScriptException: ReferenceError: "baseURL" is not defined in &lt;eval&gt; at line number 1
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.Given url baseURL (APITestingWithTestDataParameterised.feature:7)&#13;
+
+And path apiPath .......................................................... skipped
+When method get ........................................................... skipped
+Then status 200 ........................................................... skipped
+* print "Response: ", response ............................................ skipped
+Then match response.data.id == 2 .......................................... skipped
+Then match response.data.email == 'janet.weaver@reqres.in' ................ skipped
+And match response.data != null ........................................... skipped
+* def loginPath = '/api/login' ............................................ passed
+* def payload1 = .......................................................... passed
+* def payload2 = .......................................................... passed
+* def reqPayload = ('Positive' == 'Positive') ? payload1 : payload2 ....... passed
+Given url baseURL ......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: APITestingWithTestDataParameterised.feature:34 - evaluation (js) failed: baseURL, javax.script.ScriptException: ReferenceError: "baseURL" is not defined in &lt;eval&gt; at line number 1
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.Given url baseURL (APITestingWithTestDataParameterised.feature:34)&#13;
+
+And path loginPath ........................................................ skipped
+And request reqPayload .................................................... skipped
+When method post .......................................................... skipped
+Then status 200 ........................................................... skipped
+* print response .......................................................... skipped
+* def loginPath = '/api/login' ............................................ passed
+* def payload1 = .......................................................... passed
+* def payload2 = .......................................................... passed
+* def reqPayload = ('Negative' == 'Positive') ? payload1 : payload2 ....... passed
+Given url baseURL ......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: APITestingWithTestDataParameterised.feature:34 - evaluation (js) failed: baseURL, javax.script.ScriptException: ReferenceError: "baseURL" is not defined in &lt;eval&gt; at line number 1
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.Given url baseURL (APITestingWithTestDataParameterised.feature:34)&#13;
+
+And path loginPath ........................................................ skipped
+And request reqPayload .................................................... skipped
+When method post .......................................................... skipped
+Then status 400 ........................................................... skipped
+* print response .......................................................... skipped</failure>
+  </testcase>
+</testsuite>

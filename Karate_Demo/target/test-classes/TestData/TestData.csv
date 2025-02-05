@@ -1,0 +1,3 @@
+Scenario,name,job,method,expRespCode
+Create,lan,Teacher,POST,201
+Patch,lan,PMO,PATCH,200

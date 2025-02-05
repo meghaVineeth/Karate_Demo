@@ -1,0 +1,170 @@
+<testsuite failures="3" name="KarateSampleFeatures/WriteToTemplates.feature" skipped="0" tests="3" time="0.027248">
+  <testcase classname="KarateSampleFeatures.WriteToTemplates" name="Store response from the API and write a json/xml file" time="0.02118">
+    <failure message="WriteToTemplates.feature:11 - evaluation (js) failed: baseURL, javax.script.ScriptException: ReferenceError: &quot;baseURL&quot; is not defined in &lt;eval&gt; at line number 1&#10;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)">* def writePath = '../src/test/java/ProcessedTemplates/' .................. passed
+* def javaUtils = Java.type('ReusableUtils.JavaUtils') .................... passed
+* def javaUtlObj = new javaUtils .......................................... passed
+Given url baseURL ......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: WriteToTemplates.feature:11 - evaluation (js) failed: baseURL, javax.script.ScriptException: ReferenceError: "baseURL" is not defined in &lt;eval&gt; at line number 1
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.Given url baseURL (WriteToTemplates.feature:11)&#13;
+
+And path apiPath .......................................................... skipped
+When method get ........................................................... skipped
+Then status 200 ........................................................... skipped
+* def respBlock = karate.jsonPath(response, "$..data[?(@."+'first_name'+" == '"+'Janet'+"')]") . skipped
+* print "respBlock: ", respBlock.id ....................................... skipped
+* def respId = karate.jsonPath(respBlock, "$..id")[0] ..................... skipped
+* def respAvatar = karate.jsonPath(respBlock, "$..avatar")[0] ............. skipped
+* def respFName = karate.jsonPath(respBlock, "$..first_name")[0] .......... skipped
+* def respLName = karate.jsonPath(respBlock, "$..last_name")[0] ........... skipped
+* def respEmail = karate.jsonPath(respBlock, "$..email")[0] ............... skipped
+* xml xmlPayload = read('classPath:XMLTemplates/SampleXML_Template.xml') .. skipped
+* def jsonPayload = read('classPath:XMLTemplates/SampleJson.json') ........ skipped
+* def xmlFileName = javaUtlObj.currentDateTimeFileName() + '.xml' ......... skipped
+* def jsonFileName = javaUtlObj.currentDateByFormat('yyyyMMddHHMMSS') + '.json' . skipped
+* print karate.prettyXml(xmlPayload) ...................................... skipped
+* karate.write(karate.prettyXml(xmlPayload), writePath + xmlFileName) ..... skipped
+* karate.write(jsonPayload, writePath + jsonFileName) ..................... skipped</failure>
+  </testcase>
+  <testcase classname="KarateSampleFeatures.WriteToTemplates" name="Store response from the API and write a json/xml file" time="0.003001">
+    <failure message="WriteToTemplates.feature:11 - evaluation (js) failed: baseURL, javax.script.ScriptException: ReferenceError: &quot;baseURL&quot; is not defined in &lt;eval&gt; at line number 1&#10;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)">* def writePath = '../src/test/java/ProcessedTemplates/' .................. passed
+* def javaUtils = Java.type('ReusableUtils.JavaUtils') .................... passed
+* def javaUtlObj = new javaUtils .......................................... passed
+Given url baseURL ......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: WriteToTemplates.feature:11 - evaluation (js) failed: baseURL, javax.script.ScriptException: ReferenceError: "baseURL" is not defined in &lt;eval&gt; at line number 1
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.Given url baseURL (WriteToTemplates.feature:11)&#13;
+
+And path apiPath .......................................................... skipped
+When method get ........................................................... skipped
+Then status 200 ........................................................... skipped
+* def respBlock = karate.jsonPath(response, "$..data[?(@."+'first_name'+" == '"+'Janet'+"')]") . skipped
+* print "respBlock: ", respBlock.id ....................................... skipped
+* def respId = karate.jsonPath(respBlock, "$..id")[0] ..................... skipped
+* def respAvatar = karate.jsonPath(respBlock, "$..avatar")[0] ............. skipped
+* def respFName = karate.jsonPath(respBlock, "$..first_name")[0] .......... skipped
+* def respLName = karate.jsonPath(respBlock, "$..last_name")[0] ........... skipped
+* def respEmail = karate.jsonPath(respBlock, "$..email")[0] ............... skipped
+* xml xmlPayload = read('classPath:XMLTemplates/SampleXML_Template.xml') .. skipped
+* def jsonPayload = read('classPath:XMLTemplates/SampleJson.json') ........ skipped
+* def xmlFileName = javaUtlObj.currentDateTimeFileName() + '.xml' ......... skipped
+* def jsonFileName = javaUtlObj.currentDateByFormat('yyyyMMddHHMMSS') + '.json' . skipped
+* print karate.prettyXml(xmlPayload) ...................................... skipped
+* karate.write(karate.prettyXml(xmlPayload), writePath + xmlFileName) ..... skipped
+* karate.write(jsonPayload, writePath + jsonFileName) ..................... skipped
+* def writePath = '../src/test/java/ProcessedTemplates/' .................. passed
+* def javaUtils = Java.type('ReusableUtils.JavaUtils') .................... passed
+* def javaUtlObj = new javaUtils .......................................... passed
+Given url baseURL ......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: WriteToTemplates.feature:11 - evaluation (js) failed: baseURL, javax.script.ScriptException: ReferenceError: "baseURL" is not defined in &lt;eval&gt; at line number 1
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.Given url baseURL (WriteToTemplates.feature:11)&#13;
+
+And path apiPath .......................................................... skipped
+When method get ........................................................... skipped
+Then status 200 ........................................................... skipped
+* def respBlock = karate.jsonPath(response, "$..data[?(@."+'email'+" == '"+'janet.weaver@reqres.in'+"')]") . skipped
+* print "respBlock: ", respBlock.id ....................................... skipped
+* def respId = karate.jsonPath(respBlock, "$..id")[0] ..................... skipped
+* def respAvatar = karate.jsonPath(respBlock, "$..avatar")[0] ............. skipped
+* def respFName = karate.jsonPath(respBlock, "$..first_name")[0] .......... skipped
+* def respLName = karate.jsonPath(respBlock, "$..last_name")[0] ........... skipped
+* def respEmail = karate.jsonPath(respBlock, "$..email")[0] ............... skipped
+* xml xmlPayload = read('classPath:XMLTemplates/SampleXML_Template.xml') .. skipped
+* def jsonPayload = read('classPath:XMLTemplates/SampleJson.json') ........ skipped
+* def xmlFileName = javaUtlObj.currentDateTimeFileName() + '.xml' ......... skipped
+* def jsonFileName = javaUtlObj.currentDateByFormat('yyyyMMddHHMMSS') + '.json' . skipped
+* print karate.prettyXml(xmlPayload) ...................................... skipped
+* karate.write(karate.prettyXml(xmlPayload), writePath + xmlFileName) ..... skipped
+* karate.write(jsonPayload, writePath + jsonFileName) ..................... skipped</failure>
+  </testcase>
+  <testcase classname="KarateSampleFeatures.WriteToTemplates" name="Store response from the API and write a json/xml file" time="0.003068">
+    <failure message="WriteToTemplates.feature:11 - evaluation (js) failed: baseURL, javax.script.ScriptException: ReferenceError: &quot;baseURL&quot; is not defined in &lt;eval&gt; at line number 1&#10;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)">* def writePath = '../src/test/java/ProcessedTemplates/' .................. passed
+* def javaUtils = Java.type('ReusableUtils.JavaUtils') .................... passed
+* def javaUtlObj = new javaUtils .......................................... passed
+Given url baseURL ......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: WriteToTemplates.feature:11 - evaluation (js) failed: baseURL, javax.script.ScriptException: ReferenceError: "baseURL" is not defined in &lt;eval&gt; at line number 1
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.Given url baseURL (WriteToTemplates.feature:11)&#13;
+
+And path apiPath .......................................................... skipped
+When method get ........................................................... skipped
+Then status 200 ........................................................... skipped
+* def respBlock = karate.jsonPath(response, "$..data[?(@."+'first_name'+" == '"+'Janet'+"')]") . skipped
+* print "respBlock: ", respBlock.id ....................................... skipped
+* def respId = karate.jsonPath(respBlock, "$..id")[0] ..................... skipped
+* def respAvatar = karate.jsonPath(respBlock, "$..avatar")[0] ............. skipped
+* def respFName = karate.jsonPath(respBlock, "$..first_name")[0] .......... skipped
+* def respLName = karate.jsonPath(respBlock, "$..last_name")[0] ........... skipped
+* def respEmail = karate.jsonPath(respBlock, "$..email")[0] ............... skipped
+* xml xmlPayload = read('classPath:XMLTemplates/SampleXML_Template.xml') .. skipped
+* def jsonPayload = read('classPath:XMLTemplates/SampleJson.json') ........ skipped
+* def xmlFileName = javaUtlObj.currentDateTimeFileName() + '.xml' ......... skipped
+* def jsonFileName = javaUtlObj.currentDateByFormat('yyyyMMddHHMMSS') + '.json' . skipped
+* print karate.prettyXml(xmlPayload) ...................................... skipped
+* karate.write(karate.prettyXml(xmlPayload), writePath + xmlFileName) ..... skipped
+* karate.write(jsonPayload, writePath + jsonFileName) ..................... skipped
+* def writePath = '../src/test/java/ProcessedTemplates/' .................. passed
+* def javaUtils = Java.type('ReusableUtils.JavaUtils') .................... passed
+* def javaUtlObj = new javaUtils .......................................... passed
+Given url baseURL ......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: WriteToTemplates.feature:11 - evaluation (js) failed: baseURL, javax.script.ScriptException: ReferenceError: "baseURL" is not defined in &lt;eval&gt; at line number 1
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.Given url baseURL (WriteToTemplates.feature:11)&#13;
+
+And path apiPath .......................................................... skipped
+When method get ........................................................... skipped
+Then status 200 ........................................................... skipped
+* def respBlock = karate.jsonPath(response, "$..data[?(@."+'email'+" == '"+'janet.weaver@reqres.in'+"')]") . skipped
+* print "respBlock: ", respBlock.id ....................................... skipped
+* def respId = karate.jsonPath(respBlock, "$..id")[0] ..................... skipped
+* def respAvatar = karate.jsonPath(respBlock, "$..avatar")[0] ............. skipped
+* def respFName = karate.jsonPath(respBlock, "$..first_name")[0] .......... skipped
+* def respLName = karate.jsonPath(respBlock, "$..last_name")[0] ........... skipped
+* def respEmail = karate.jsonPath(respBlock, "$..email")[0] ............... skipped
+* xml xmlPayload = read('classPath:XMLTemplates/SampleXML_Template.xml') .. skipped
+* def jsonPayload = read('classPath:XMLTemplates/SampleJson.json') ........ skipped
+* def xmlFileName = javaUtlObj.currentDateTimeFileName() + '.xml' ......... skipped
+* def jsonFileName = javaUtlObj.currentDateByFormat('yyyyMMddHHMMSS') + '.json' . skipped
+* print karate.prettyXml(xmlPayload) ...................................... skipped
+* karate.write(karate.prettyXml(xmlPayload), writePath + xmlFileName) ..... skipped
+* karate.write(jsonPayload, writePath + jsonFileName) ..................... skipped
+* def writePath = '../src/test/java/ProcessedTemplates/' .................. passed
+* def javaUtils = Java.type('ReusableUtils.JavaUtils') .................... passed
+* def javaUtlObj = new javaUtils .......................................... passed
+Given url baseURL ......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: WriteToTemplates.feature:11 - evaluation (js) failed: baseURL, javax.script.ScriptException: ReferenceError: "baseURL" is not defined in &lt;eval&gt; at line number 1
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.Given url baseURL (WriteToTemplates.feature:11)&#13;
+
+And path apiPath .......................................................... skipped
+When method get ........................................................... skipped
+Then status 200 ........................................................... skipped
+* def respBlock = karate.jsonPath(response, "$..data[?(@."+'id'+" == '"+'2'+"')]") . skipped
+* print "respBlock: ", respBlock.id ....................................... skipped
+* def respId = karate.jsonPath(respBlock, "$..id")[0] ..................... skipped
+* def respAvatar = karate.jsonPath(respBlock, "$..avatar")[0] ............. skipped
+* def respFName = karate.jsonPath(respBlock, "$..first_name")[0] .......... skipped
+* def respLName = karate.jsonPath(respBlock, "$..last_name")[0] ........... skipped
+* def respEmail = karate.jsonPath(respBlock, "$..email")[0] ............... skipped
+* xml xmlPayload = read('classPath:XMLTemplates/SampleXML_Template.xml') .. skipped
+* def jsonPayload = read('classPath:XMLTemplates/SampleJson.json') ........ skipped
+* def xmlFileName = javaUtlObj.currentDateTimeFileName() + '.xml' ......... skipped
+* def jsonFileName = javaUtlObj.currentDateByFormat('yyyyMMddHHMMSS') + '.json' . skipped
+* print karate.prettyXml(xmlPayload) ...................................... skipped
+* karate.write(karate.prettyXml(xmlPayload), writePath + xmlFileName) ..... skipped
+* karate.write(jsonPayload, writePath + jsonFileName) ..................... skipped</failure>
+  </testcase>
+</testsuite>

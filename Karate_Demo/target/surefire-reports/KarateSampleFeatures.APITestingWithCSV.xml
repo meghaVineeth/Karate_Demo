@@ -1,0 +1,63 @@
+<testsuite failures="2" name="KarateSampleFeatures/APITestingWithCSV.feature" skipped="0" tests="2" time="0.067421">
+  <testcase classname="KarateSampleFeatures.APITestingWithCSV" name="Post values and validate" time="0.033906">
+    <failure message="APITestingWithCSV.feature:20 - evaluation (js) failed: baseURL, javax.script.ScriptException: ReferenceError: &quot;baseURL&quot; is not defined in &lt;eval&gt; at line number 1&#10;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)">* def crudPath1 = '/api/users' ............................................ passed
+* def crudPath2 = '/api/users/2' .......................................... passed
+* def javaUtils = Java.type('ReusableUtils.JavaUtils') .................... passed
+* def javaUtlObj = new javaUtils .......................................... passed
+* def completePath = ('Create' == 'Create') ? crudPath1 : crudPath2 ....... passed
+* def reqPayload = ........................................................ passed
+Given url baseURL ......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: APITestingWithCSV.feature:20 - evaluation (js) failed: baseURL, javax.script.ScriptException: ReferenceError: "baseURL" is not defined in &lt;eval&gt; at line number 1
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.Given url baseURL (APITestingWithCSV.feature:20)&#13;
+
+And path completePath ..................................................... skipped
+And request reqPayload .................................................... skipped
+When method POST .......................................................... skipped
+Then status 201 ........................................................... skipped
+* print 'Create', response ................................................ skipped
+And match response.job == 'Teacher' ....................................... skipped</failure>
+  </testcase>
+  <testcase classname="KarateSampleFeatures.APITestingWithCSV" name="Post values and validate" time="0.033515">
+    <failure message="APITestingWithCSV.feature:20 - evaluation (js) failed: baseURL, javax.script.ScriptException: ReferenceError: &quot;baseURL&quot; is not defined in &lt;eval&gt; at line number 1&#10;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)">* def crudPath1 = '/api/users' ............................................ passed
+* def crudPath2 = '/api/users/2' .......................................... passed
+* def javaUtils = Java.type('ReusableUtils.JavaUtils') .................... passed
+* def javaUtlObj = new javaUtils .......................................... passed
+* def completePath = ('Create' == 'Create') ? crudPath1 : crudPath2 ....... passed
+* def reqPayload = ........................................................ passed
+Given url baseURL ......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: APITestingWithCSV.feature:20 - evaluation (js) failed: baseURL, javax.script.ScriptException: ReferenceError: "baseURL" is not defined in &lt;eval&gt; at line number 1
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.Given url baseURL (APITestingWithCSV.feature:20)&#13;
+
+And path completePath ..................................................... skipped
+And request reqPayload .................................................... skipped
+When method POST .......................................................... skipped
+Then status 201 ........................................................... skipped
+* print 'Create', response ................................................ skipped
+And match response.job == 'Teacher' ....................................... skipped
+* def crudPath1 = '/api/users' ............................................ passed
+* def crudPath2 = '/api/users/2' .......................................... passed
+* def javaUtils = Java.type('ReusableUtils.JavaUtils') .................... passed
+* def javaUtlObj = new javaUtils .......................................... passed
+* def completePath = ('Patch' == 'Create') ? crudPath1 : crudPath2 ........ passed
+* def reqPayload = ........................................................ passed
+Given url baseURL ......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: APITestingWithCSV.feature:20 - evaluation (js) failed: baseURL, javax.script.ScriptException: ReferenceError: "baseURL" is not defined in &lt;eval&gt; at line number 1
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.Given url baseURL (APITestingWithCSV.feature:20)&#13;
+
+And path completePath ..................................................... skipped
+And request reqPayload .................................................... skipped
+When method PATCH ......................................................... skipped
+Then status 200 ........................................................... skipped
+* print 'Patch', response ................................................. skipped
+And match response.job == 'PMO' ........................................... skipped</failure>
+  </testcase>
+</testsuite>
