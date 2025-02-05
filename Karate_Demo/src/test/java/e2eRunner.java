@@ -18,7 +18,7 @@ public class e2eRunner {
         Results results = Runner.path("classpath:" +
                 "KarateSampleFeatures").parallel(3);
         generateReport(results.getReportDir());
-//        asserEquals(results.getErrorMessages(), results.getFailCount() == 0);
+        ////asserEquals(results.getErrorMessages(), results.getFailCount() == 0);
     }
 
     public static void generateReport(String karateOutputPath) {
