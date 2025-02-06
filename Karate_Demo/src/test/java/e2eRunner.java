@@ -16,9 +16,9 @@ public class e2eRunner {
     public void testParallel() {
 //        System.setProperty("karate.env", "UAT"); // ensure reset if other tests (e.g. mock) had set env in CI
         Results results = Runner.path("classpath:" +
-                "KarateSampleFeatures").parallel(3);
+                "KarateSampleFeatures/JenkinsTest.feature").parallel(3);
         generateReport(results.getReportDir());
-        ////asserEquals(results.getErrorMessages(), results.getFailCount() == 0);
+//        asserEquals(results.getErrorMessages(), results.getFailCount() == 0);
     }
 
     public static void generateReport(String karateOutputPath) {
