@@ -1,1 +1,1 @@
-# Karate_Demo
+mvn test -Dtest=e2eRunner -Dargline="-Dkarate.env=UAT"
