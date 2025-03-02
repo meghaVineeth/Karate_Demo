@@ -1,3 +1,4 @@
+@Jenkins
 Feature: Test Jenkins for Cucumber Feature
 
   Background:
