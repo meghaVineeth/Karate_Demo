@@ -1,7 +1,0 @@
-{
-  "id": "#(respId)",
-  "email": "#(respEmail)",
-  "first_name": "#(respFName)",
-  "last_name": "#(respLName)",
-  "avatar": "#(respAvatar)"
-}
