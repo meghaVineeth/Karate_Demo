@@ -22,7 +22,6 @@ public class e2eRunner {
 
     @Test
     public void testParallel() {
-//        System.setProperty("karate.env", "UAT"); // ensure reset if other tests (e.g. mock) had set env in CI
         String karateOutputPath = "target/cucumber-html-reports";
         Results results = Runner.path("classpath:KarateSampleFeatures/JenkinsTest.feature")
                 .outputCucumberJson(true)
