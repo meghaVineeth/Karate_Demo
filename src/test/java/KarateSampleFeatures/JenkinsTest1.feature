@@ -5,7 +5,7 @@ Feature: Test Jankins for Cucumber Feature
 
   Scenario Outline: Something needs to happen
     * def testString = 'lucky'
-    * print "Checking the string"
+    * print "Checking the string1"
     * def javaUtils = Java.type('ReusableUtils.XmlGenerator')
     * def javaUtlObj = new javaUtils
     * def generateXml = javaUtlObj.generateXml()
