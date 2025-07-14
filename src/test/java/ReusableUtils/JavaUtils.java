@@ -23,4 +23,11 @@ public class JavaUtils {
         String[] data1 = { data };
         writer.close();
     }
+
+    public void createXMLUsingVelocity(String completePath, String data) throws Exception{
+        FileWriter outputfile = new FileWriter(completePath, true);
+        CSVWriter writer = new CSVWriter(outputfile);
+        String[] data1 = { data };
+        writer.close();
+    }
 }

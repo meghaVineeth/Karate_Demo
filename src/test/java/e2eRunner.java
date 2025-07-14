@@ -23,7 +23,7 @@ public class e2eRunner {
     @Test
     public void testParallel() {
         String karateOutputPath = "target/cucumber-html-reports";
-        Results results = Runner.path("classpath:KarateSampleFeatures/JenkinsTest.feature")
+        Results results = Runner.path("classpath:KarateSampleFeatures/")
                 .outputCucumberJson(true)
                 .parallel(1);
         generateReport(results.getReportDir());
